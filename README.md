@@ -343,7 +343,7 @@ Cope mappings:
 
 ### strip whitespace
 
-    map <leader>ws :FixWhitespace<cr>
+    map <leader>s :FixWhitespace<cr>
 
 ## How to uninstall
 Just do following:

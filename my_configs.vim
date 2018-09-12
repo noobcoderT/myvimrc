@@ -34,7 +34,7 @@ map <leader>9 :b 9<CR>
 
 " 配置vim-trailing-whitespace
 
-map <leader>ws :FixWhitespace<cr>
+map <leader>s :FixWhitespace<cr>
 
 set textwidth=101
 set colorcolumn=-0
