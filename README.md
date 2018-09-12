@@ -1,3 +1,5 @@
+This repo is forked from https://github.com/amix/vimrc.git and some changes made by me.
+
 ![VIM](https://dnp4pehkvoo6n.cloudfront.net/43c5af597bd5c1a64eb1829f011c208f/as/Ultimate%20Vimrc.svg)
 
 # The Ultimate vimrc
@@ -11,18 +13,23 @@ There are two versions:
 
 I would, of course, recommend using the awesome version.
 
+## Prerequisite
+Some depends may be needed:
+- fontconfig
+- fonts-powerline
+Make your terminal as xterm-256color.
 
 ## How to install the Awesome version?
 ### Install for your own user only
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
-	git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone --depth=1 https://github.com/noobcoderT/myvimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 	
 ### Install for multiple users
 To install for multiple users, the repository needs to be cloned to a location accessible for all the intended users.
 
-	git clone --depth=1 https://github.com/amix/vimrc.git /opt/vim_runtime
+	git clone --depth=1 https://github.com/noobcoderT/myvimrc.git /opt/vim_runtime
 	sh ~/.vim_runtime/install_awesome_parameterized.sh /opt/vim_runtime user0 user1 user2
 	# to install for all users with home directories
 	sh ~/.vim_runtime/install_awesome_parameterized.sh /opt/vim_runtime --all
@@ -40,11 +47,11 @@ Some other fonts that Awesome will try to use:
 
 ## How to install the Basic version?
 
-The basic version is just one file and no plugins. Just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) and paste it into your vimrc.
+The basic version is just one file and no plugins. Just copy [basic.vim](https://github.com/noobcoderT/myvimrc/blob/master/vimrcs/basic.vim) and paste it into your vimrc.
 
 The basic version is useful to install on remote servers where you don't need many plugins, and you don't do many edits.
 
-	git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone --depth=1 https://github.com/noobcoderT/myvimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_basic_vimrc.sh
 
 
@@ -105,6 +112,9 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections for Vim, CTRL+N is remapped to CTRL+S (due to YankRing)
 * [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
 * [vim-zenroom2](https://github.com/amix/vim-zenroom2) Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room
+* [vim-airline](https://github.com/vim-airline/vim-airline) Beautifull status line and buffer tabline.
+* [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) Airline themes
+* [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace) Strip whitespace.
 
 
 ## Included color schemes
