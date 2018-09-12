@@ -17,7 +17,7 @@ I would, of course, recommend using the awesome version.
 Some depends may be needed:
 - fontconfig
 - fonts-powerline
-Make your terminal as xterm-256color.
+- Make your terminal as xterm-256color.
 
 ## How to install the Awesome version?
 ### Install for your own user only
@@ -326,6 +326,24 @@ Cope mappings:
     map <leader>n :cn<cr>
     map <leader>p :cp<cr>
 
+### buffer
+
+    nnoremap [b :bp<CR>
+    nnoremap ]b :bn<CR>
+
+    map <leader>1 :b 1<CR>
+    map <leader>2 :b 2<CR>
+    map <leader>3 :b 3<CR>
+    map <leader>4 :b 4<CR>
+    map <leader>5 :b 5<CR>
+    map <leader>6 :b 6<CR>
+    map <leader>7 :b 7<CR>
+    map <leader>8 :b 8<CR>
+    map <leader>9 :b 9<CR>
+
+### strip whitespace
+
+    map <leader>ws :FixWhitespace<cr>
 
 ## How to uninstall
 Just do following:
