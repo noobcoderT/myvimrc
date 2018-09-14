@@ -344,6 +344,18 @@ Cope mappings:
 ### strip whitespace
 
     map <leader>s :FixWhitespace<cr>
+    
+## Use with Docker
+### build your own docker image
+    docker build -t <your tag name> .
+### use your docker image
+    docker run -dit -v <host_src>:<docker_dst> --name <your docker container name> <your tag name> zsh
+    docker exec -it <your tag name> zsh
+
+## use with my pre_build docker image
+    docker pull noobdockert/tzvim
+    docker run -dit -v <host_src>:<docker_dst> --name tzvim noobdockert/tzvim:latest zsh
+    docker exec -it tzvim zsh
 
 ## How to uninstall
 Just do following:
