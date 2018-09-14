@@ -10,4 +10,4 @@ RUN sh install.sh
 RUN rm -rf install.sh
 RUN sed -i "$ a setopt no_nomatch" /root/.zshrc
 RUN sed -i "$ a export TERM=xterm-256color" /root/.zshrc
-RUN sed -i "s/ZSH_THEME=.*$/ZSH_THEME=\"tonotdo\"/g" /root/.zshrc
+RUN sed -i "s/ZSH_THEME=.*$/ZSH_THEME=\"agnoster\"/g" /root/.zshrc
