@@ -127,7 +127,6 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [vim-bundle-mako](https://github.com/sophacles/vim-bundle-mako)
 * [vim-markdown](https://github.com/tpope/vim-markdown)
 * [nginx.vim](https://github.com/vim-scripts/nginx.vim): Highlights configuration files for nginx
-* [vim-go](https://github.com/fatih/vim-go)
 
 
 ## How to include your own stuff?
