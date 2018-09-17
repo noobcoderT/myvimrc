@@ -39,3 +39,6 @@ map <leader>s :FixWhitespace<cr>
 set textwidth=101
 set colorcolumn=-0
 highlight ColorColumn ctermbg=blue
+
+" 配置tagbar
+nmap <leader>t :TagbarToggle<CR>
