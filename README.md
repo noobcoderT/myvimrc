@@ -108,6 +108,7 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [vim-airline](https://github.com/vim-airline/vim-airline) Beautifull status line and buffer tabline.
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) Airline themes
 * [vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace) Strip whitespace.
+* [tagbar](https://github.com/majutsushi/tagbar) tagbar plugin co-working with ctags([Exuberant Ctags 5.5](http://ctags.sourceforge.net/) or [Universal Ctags](https://ctags.io/))
 
 
 ## Included color schemes
@@ -344,10 +345,15 @@ Cope mappings:
 ### strip whitespace
 
     map <leader>s :FixWhitespace<cr>
+
+### tagbar
+
+    nmap <leader>t :TagbarToggle<CR>
     
 ## Use with Docker
 ### build your own docker image
-    docker build -t <your tag name> .
+    git clone --depth=1 https://github.com/noobcoderT/myvimrc.git && cd myvimrc
+    docker build -t <your tag name> -f Docker/Dockerfile .
 ### use your docker image
     docker run -dit -v <host_src>:<docker_dst> --name <your docker container name> <your tag name> zsh
     docker exec -it <your tag name> zsh
