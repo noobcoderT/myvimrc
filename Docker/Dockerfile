@@ -4,6 +4,7 @@ RUN mv /root/.vim_runtime/Docker/tmux.conf /root/.tmux.conf
 RUN mv /root/.vim_runtime/Docker/bin/* /usr/local/bin/
 RUN sh /root/.vim_runtime/install_awesome_vimrc.sh
 RUN apk add curl git vim zsh tmux tzdata
+RUN git config --global core.pager more
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN curl -O https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 RUN sed -i "/s*env zsh -l/d" install.sh
